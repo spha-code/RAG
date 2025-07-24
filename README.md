@@ -1,5 +1,7 @@
 # RAG LLM App in Local Directory
 ---
+![Screenshot](https://raw.githubusercontent.com/spha-code/RAG-system/main/Screenshot.png)
+---
 #### Structure of the Project
 ```
 rag-system/
