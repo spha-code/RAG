@@ -13,7 +13,6 @@ rag-system/
 └── templates/
     └── index.html  <-- HTML in templates folder
 ```
----
 1. ```mkdir rag-system``` (run on WSL)
 
 2. ```cd rag-system```
@@ -30,22 +29,30 @@ rag-system/
 6. Install requirements.txt
    ``` pip install -r requirements.txt ```
 
-7. ```mkdir docs```
+7. ```mkdir docs``` and upload files (.pdf, .txt) manually in the directory
 
 8. Install Ollama Locally
 ``` sudo snap install ollama ```
 
 9. Download a model with ollama
-``` ollama pull deepseek-r1:1.5b ``` **Downloading deepseek-r1:1.5b which is just 1.1GB See here for a list of models: https://ollama.com/search
+``` ollama pull deepseek-r1:1.5b ```
 
-10. ```ollama pull nomic-embed-text```
+    Downloaded deepseek-r1:1.5b which is 1.1GB 
+    
+    See here for a list of models: https://ollama.com/search
 
-11. Flask uses a templates folder by default to find HTML files. Create this folder in your project root
+11. ```ollama pull nomic-embed-text```
+
+12. Flask uses a templates folder by default to find HTML files. Create this folder in your project root
 
     ```mkdir templates```
 
-12. , and inside it, create index.html.
-13. run ```ollama serve```
-14. run ```python ingest.py```
-15. run ```python app.py```
+13. Inside the templates folder, create ```index.html```
+
+14. Open a new terminal and run ```ollama serve```
+    This command starts the Ollama server, do not close this terminal
+    
+15. run ```python ingest.py```
+    
+16. run ```python app.py```
    
