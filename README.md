@@ -1,4 +1,4 @@
-# RAG LLM App in Local Directory
+# RAG ollama LLM App in Flask Backend Local Directory
 ---
 ![Screenshot](https://raw.githubusercontent.com/spha-code/RAG-system/main/Screenshot.png)
 ---
